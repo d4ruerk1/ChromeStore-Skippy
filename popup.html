@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Skippy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --accent: #5842d6;
+    --bg: #ffffff;
+    --surface: #f6f6fa;
+    --text: #1a1a1e;
+    --text-muted: #6b6b76;
+    --border: #eaeaf0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c22;
+      --surface: #26262e;
+      --text: #f2f2f6;
+      --text-muted: #a2a2ad;
+      --border: #34343f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    width: 320px;
+    margin: 0;
+    padding: 18px;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    background: var(--bg);
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2px 12px;
+    margin-bottom: 12px;
+  }
+  .card h2 {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin: 10px 0 2px;
+    font-weight: 600;
+  }
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+  }
+  .toggle-row:last-of-type {
+    border-bottom: none;
+  }
+  .toggle-row span.label {
+    line-height: 1.35;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  .slider {
+    position: absolute;
+    inset: 0;
+    background: var(--border);
+    border-radius: 999px;
+    transition: background 0.15s ease;
+  }
+  .slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: 2px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.15s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  }
+  .switch input:checked + .slider {
+    background: var(--accent);
+  }
+  .switch input:checked + .slider::before {
+    transform: translateX(14px);
+  }
+  .switch input:focus-visible + .slider {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .info-note {
+    margin: 0 0 10px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--text-muted);
+  }
+  .donate-button {
+    display: block;
+    width: 100%;
+    margin: 2px 0 4px;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #ffffff !important;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  .donate-button:hover {
+    opacity: 0.92;
+  }
+</style>
+</head>
+<body>
+  <div class="card platform-card">
+    <h2 data-i18n="featuresTitle">Funzionalità</h2>
+    <label class="toggle-row">
+      <span class="label" data-i18n="skipIntroLabel">Salta sigla / intro / recap</span>
+      <span class="switch">
+        <input type="checkbox" id="skipIntro" />
+        <span class="slider"></span>
+      </span>
+    </label>
+    <label class="toggle-row">
+      <span class="label" data-i18n="autoNextLabel">Episodio successivo automatico</span>
+      <span class="switch">
+        <input type="checkbox" id="autoNext" />
+        <span class="slider"></span>
+      </span>
+    </label>
+  </div>
+
+  <div class="card">
+    <h2 data-i18n="donateTitle">Sostieni Skippy</h2>
+    <p class="info-note" data-i18n="donateNote">
+      Skippy è gratuito e sviluppato nel tempo libero. Se ti torna utile,
+      puoi offrire un caffè a chi lo mantiene.
+    </p>
+    <a id="donateBtn" class="donate-button" href="#" target="_blank" rel="noopener noreferrer" data-i18n="donateButton">☕ Offri un caffè</a>
+  </div>
+
+  <script src="src/core.js"></script>
+  <script src="src/i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

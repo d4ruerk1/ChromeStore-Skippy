@@ -1,0 +1,30 @@
+{
+  "extDescription": {
+    "message": "Saute automatiquement intros, résumés et génériques sur Netflix, Prime Video, Disney+, Crunchyroll et Paramount+, en toute langue.",
+    "description": "Description de l'extension affichée sur la page des extensions du navigateur."
+  },
+  "featuresTitle": {
+    "message": "Fonctionnalités",
+    "description": "Titre de la carte des réglages dans le popup."
+  },
+  "skipIntroLabel": {
+    "message": "Sauter le générique / l'intro / le résumé",
+    "description": "Libellé de l'interrupteur qui saute intro, générique, résumé et générique de fin."
+  },
+  "autoNextLabel": {
+    "message": "Épisode suivant automatique",
+    "description": "Libellé de l'interrupteur qui passe automatiquement à l'épisode suivant."
+  },
+  "donateTitle": {
+    "message": "Soutenir Skippy",
+    "description": "Titre de la carte de don dans le popup."
+  },
+  "donateNote": {
+    "message": "Skippy est gratuit et développé sur le temps libre. Si vous le trouvez utile, vous pouvez offrir un café à la personne qui le maintient.",
+    "description": "Texte explicatif de la carte de don."
+  },
+  "donateButton": {
+    "message": "☕ Offrir un café",
+    "description": "Texte du bouton de don."
+  }
+}

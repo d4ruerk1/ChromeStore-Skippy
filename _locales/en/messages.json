@@ -1,0 +1,30 @@
+{
+  "extDescription": {
+    "message": "Automatically skips intros, recaps and credits on Netflix, Prime Video, Disney+, Crunchyroll and Paramount+, in any language.",
+    "description": "Extension description shown on the browser's extensions page."
+  },
+  "featuresTitle": {
+    "message": "Features",
+    "description": "Title of the settings card in the popup."
+  },
+  "skipIntroLabel": {
+    "message": "Skip intro / opening / recap",
+    "description": "Label for the toggle that skips intros, opening titles, recaps, and end credits."
+  },
+  "autoNextLabel": {
+    "message": "Automatic next episode",
+    "description": "Label for the toggle that automatically advances to the next episode."
+  },
+  "donateTitle": {
+    "message": "Support Skippy",
+    "description": "Title of the donation card in the popup."
+  },
+  "donateNote": {
+    "message": "Skippy is free and built in spare time. If you find it useful, you can buy the maintainer a coffee.",
+    "description": "Explanatory text for the donation card."
+  },
+  "donateButton": {
+    "message": "☕ Buy a coffee",
+    "description": "Donation button text."
+  }
+}

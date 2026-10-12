@@ -1,0 +1,86 @@
+{
+  "manifest_version": 3,
+  "name": "Skippy",
+  "version": "1.7.0",
+  "default_locale": "en",
+  "description": "__MSG_extDescription__",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Skippy",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{4eb6ed4e-a59d-4d2e-ac12-5a71d3b488ec}",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/watch/*"],
+      "js": ["src/core.js", "src/netflix.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*.primevideo.com/*",
+        "*://*.amazon.it/*",
+        "*://*.amazon.com/*",
+        "*://*.amazon.co.uk/*",
+        "*://*.amazon.de/*",
+        "*://*.amazon.fr/*",
+        "*://*.amazon.es/*",
+        "*://*.amazon.co.jp/*",
+        "*://*.amazon.ca/*",
+        "*://*.amazon.com.au/*",
+        "*://*.amazon.com.br/*",
+        "*://*.amazon.com.mx/*",
+        "*://*.amazon.in/*",
+        "*://*.amazon.nl/*",
+        "*://*.amazon.se/*",
+        "*://*.amazon.pl/*",
+        "*://*.amazon.com.tr/*",
+        "*://*.amazon.ae/*",
+        "*://*.amazon.sa/*",
+        "*://*.amazon.eg/*",
+        "*://*.amazon.sg/*"
+      ],
+      "js": ["src/core.js", "src/amazon.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.disneyplus.com/*"],
+      "js": ["src/core.js", "src/disney.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.crunchyroll.com/*"],
+      "js": ["src/core.js", "src/crunchyroll.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://*.paramountplus.com/*"],
+      "js": ["src/core.js", "src/paramount.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

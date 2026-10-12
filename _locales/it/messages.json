@@ -1,0 +1,30 @@
+{
+  "extDescription": {
+    "message": "Salta automaticamente intro, recap e sigle su Netflix, Prime Video, Disney+, Crunchyroll e Paramount+, in ogni lingua.",
+    "description": "Descrizione dell'estensione mostrata nella pagina delle estensioni del browser."
+  },
+  "featuresTitle": {
+    "message": "Funzionalità",
+    "description": "Titolo della card con gli interruttori delle funzioni nel popup."
+  },
+  "skipIntroLabel": {
+    "message": "Salta sigla / intro / recap",
+    "description": "Etichetta dell'interruttore che salta sigla, intro, recap e titoli di coda."
+  },
+  "autoNextLabel": {
+    "message": "Episodio successivo automatico",
+    "description": "Etichetta dell'interruttore che avanza automaticamente all'episodio successivo."
+  },
+  "donateTitle": {
+    "message": "Sostieni Skippy",
+    "description": "Titolo della card di donazione nel popup."
+  },
+  "donateNote": {
+    "message": "Skippy è gratuito e sviluppato nel tempo libero. Se ti torna utile, puoi offrire un caffè a chi lo mantiene.",
+    "description": "Testo esplicativo della card di donazione."
+  },
+  "donateButton": {
+    "message": "☕ Offri un caffè",
+    "description": "Testo del pulsante di donazione."
+  }
+}

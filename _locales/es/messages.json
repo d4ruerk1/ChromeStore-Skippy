@@ -1,0 +1,30 @@
+{
+  "extDescription": {
+    "message": "Salta automáticamente intros, resúmenes y créditos en Netflix, Prime Video, Disney+, Crunchyroll y Paramount+, en cualquier idioma.",
+    "description": "Descripción de la extensión mostrada en la página de extensiones del navegador."
+  },
+  "featuresTitle": {
+    "message": "Funciones",
+    "description": "Título de la tarjeta de ajustes en el popup."
+  },
+  "skipIntroLabel": {
+    "message": "Saltar sigla / intro / resumen",
+    "description": "Etiqueta del interruptor que salta la sigla, la intro, el resumen y los créditos finales."
+  },
+  "autoNextLabel": {
+    "message": "Siguiente episodio automático",
+    "description": "Etiqueta del interruptor que avanza automáticamente al siguiente episodio."
+  },
+  "donateTitle": {
+    "message": "Apoya a Skippy",
+    "description": "Título de la tarjeta de donación en el popup."
+  },
+  "donateNote": {
+    "message": "Skippy es gratuito y se desarrolla en el tiempo libre. Si te resulta útil, puedes invitar a un café a quien lo mantiene.",
+    "description": "Texto explicativo de la tarjeta de donación."
+  },
+  "donateButton": {
+    "message": "☕ Invitar a un café",
+    "description": "Texto del botón de donación."
+  }
+}

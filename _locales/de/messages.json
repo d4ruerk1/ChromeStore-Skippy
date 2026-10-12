@@ -1,0 +1,30 @@
+{
+  "extDescription": {
+    "message": "Überspringt automatisch Vorspann, Rückblicke und Abspann bei Netflix, Prime Video, Disney+, Crunchyroll und Paramount+.",
+    "description": "Beschreibung der Erweiterung auf der Erweiterungsseite des Browsers."
+  },
+  "featuresTitle": {
+    "message": "Funktionen",
+    "description": "Titel der Einstellungskarte im Popup."
+  },
+  "skipIntroLabel": {
+    "message": "Vorspann / Intro / Rückblick überspringen",
+    "description": "Beschriftung des Schalters, der Vorspann, Intro, Rückblick und Abspann überspringt."
+  },
+  "autoNextLabel": {
+    "message": "Automatisch nächste Folge",
+    "description": "Beschriftung des Schalters, der automatisch zur nächsten Folge wechselt."
+  },
+  "donateTitle": {
+    "message": "Skippy unterstützen",
+    "description": "Titel der Spendenkarte im Popup."
+  },
+  "donateNote": {
+    "message": "Skippy ist kostenlos und wird in der Freizeit entwickelt. Wenn es dir nützlich ist, kannst du dem Entwickler einen Kaffee spendieren.",
+    "description": "Erklärender Text der Spendenkarte."
+  },
+  "donateButton": {
+    "message": "☕ Einen Kaffee spendieren",
+    "description": "Text des Spenden-Buttons."
+  }
+}
